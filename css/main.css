@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'ObjectSans-regular';
+  src: url('./Fonts/ObjectSans-Regular.ttf');
+  font-weight: 'regular';
+}
+
+@font-face {
+  font-family: 'ObjectSans-heavy';
+  src: url('./Fonts/ObjectSans-Heavy.ttf');
+  font-weight: heavy;
+}
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+  font-family: 'ObjectSans-regular';
+}
+
+/* Remove the stupid outer glow in Webkit */
+input:focus {
+  outline: 0;
+}
+
+.h_input {
+  border-radius: 0px;
+  height: 3rem;
+  background-color: #111;
+  padding-left: 1rem;
+  color: white;
+}
+
+.h_input:focus {
+  box-shadow: inset 1px 1px #fff,
+    inset -1px -1px #fff;
+}
+
+.h_button {
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 0px;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.h_button:hover {
+  transform: skew(-.312rad);
+}
+
+body {
+  background-color: black;
+  height: var(--height);
+
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+h1,
+h2 {
+  font-family: 'ObjectSans-regular', sans-serif;
+}
+
+#home {
+  height: 100%;
+  padding: 2em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#logo {
+  display: flex;
+  align-items: baseline;
+}
+
+#logo h1 {
+  font-weight: 300;
+}
+
+#logo #separator {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+#home img {
+  transition: 0.2s ease-in-out;
+  width: 7em;
+  opacity: 0.5;
+}
+
+#home img:hover {
+  opacity: 1.0;
+}
+
+.void {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-us {
+  font-size: 2em;
+  max-width: 50%;
+}
+
+#message span {
+  font-family: 'ObjectSans-Heavy',
+    sans-serif;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.z-max {
+  position: absolute;
+  z-index: 100000;
+}
+
+.abs-centered {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#copyright {
+  opacity: 0.25;
+}
+
+#gena1 {
+  transition: 1s;
+  padding-top: 1rem;
+  filter: blur(35px);
+}
+
+#gena2 {
+  transition: 1s;
+  padding-top: 1rem;
+  filter: blur(35px);
+}
+
+#gena3 {
+  transition: 1s;
+  padding-top: 1rem;
+  filter: blur(35px);
+}
