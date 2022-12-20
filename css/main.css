@@ -110,7 +110,6 @@ h2 {
 }
 
 #home img {
-  transition: 0.2s ease-in-out;
   width: 7em;
   opacity: 0.5;
 }
